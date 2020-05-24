@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="File" />
+    <Button layoutX="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Action" />
+    <TextArea fx:id="public_Area" editable="false" layoutY="26.0" prefHeight="247.0" prefWidth="498.0" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+      <padding>
+         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding></TextArea>
+    <TextArea fx:id="private_Area" editable="false" layoutY="26.0" prefHeight="247.0" prefWidth="498.0" visible="false" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding></TextArea>
+    <AnchorPane layoutY="270.0" prefHeight="230.0" prefWidth="498.0">
+        <Button fx:id="public_button" mnemonicParsing="false" onAction="#ToPublic" prefHeight="26.0" prefWidth="69.0" text="Public" />
+        <Button fx:id="private_button" layoutX="70.0" mnemonicParsing="false" onAction="#ToPrivate" prefHeight="25.0" prefWidth="75.0" text="Private" />
+        <Label layoutY="50.0" prefHeight="15.0" prefWidth="70.0" text="Send To" />
+        <Label layoutY="90.0" prefHeight="15.0" prefWidth="70.0" text="Message:" />
+        <TextField fx:id="Message" layoutX="86.0" layoutY="90.0" prefHeight="23.0" prefWidth="325.0" />
+        <Button fx:id="Send" layoutX="429.0" layoutY="90.0" onAction="#SendMessage" text="Send" />
+        <ChoiceBox fx:id="cb" layoutX="86.0" layoutY="46.0"  prefHeight="23.0" prefWidth="387.0" />
+<!--        <ChoiceBox fx:id="cb2" layoutX="86.0" layoutY="126.0" onAction="#Choice_sth" prefHeight="23.0" prefWidth="387.0" />-->
+    </AnchorPane>
+
+</AnchorPane>
